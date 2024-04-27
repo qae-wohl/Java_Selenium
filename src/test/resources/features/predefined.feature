@@ -10,3 +10,9 @@ Feature: Smoke steps
     And I click on element with xpath "(//input[@name='btnK'])[2]"
     And I wait for element with xpath "//*[@id='res']" to be present
     Then element with xpath "//*[@id='res']" should contain text "Cucumber"
+
+  @predefined2
+  Scenario: Java challenges
+    Given I solve Java Challenge
+
+
