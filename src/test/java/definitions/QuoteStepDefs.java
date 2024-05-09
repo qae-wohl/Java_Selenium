@@ -79,8 +79,8 @@ public class QuoteStepDefs {
         getDriver().findElement(By.id("iframeHoverMessage")).getText();
     }
 
-    @And("I selet my country {string} from the Country drop down")
-    public void iSeletMyCountryFromTheCountryDropDown(String country) {
+    @And("I select my country {string} from the Country drop down")
+    public void iSelectMyCountryFromTheCountryDropDown(String country) {
         Select select = new Select(getDriver().findElement(By.name("countryOfOrigin")));
         select.selectByValue("USA");
         // OR
